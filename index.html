@@ -4,19 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web 1</title>
+    <link rel="stylesheet" href="style.css">
 </head>
     <body>
-        <!-- Tambahkan kode kalian di sini -->
            <!-- Navbar -->
-    <nav class="navbar">
-    <p class="navbar-logo">Mental Health.</p>
+    <nav>
+    <div class="navbar-logo"><a href=" "> Mental Health</a></div>
     
-    <!-- <div class="navbar-nav">
-    <a style="text-decoration:none" href="#">Home</a>
-    <a style="text-decoration:none" href="#foryou">For You</a>
-    <a style="text-decoration:none" href="#about">About Me</a>
-    <a style="text-decoration:none" href="#signin">Sign In</a>
-    </div> -->
+    <div class="menu">
+        <ul>
+           <li><a  href="#Home">Home</a></li>
+            <li><a href="#foryou">For You</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#signin">Sign In</a></li>
+        </ul>
+    
+    </div>
         </nav> 
         <section class="header">
             <h1 style="font-family: 'Poppins', sans-serif; font-size: xx-large; color: #12486B">Karena Kesehatan Mentalmu Adalah Yang Utama</h1>
@@ -33,6 +36,34 @@
             <li> Tekanan Akademik, Persaingan akademik yang ketat dan tekanan untuk mencapai prestasi tinggi dapat menyebabkan stress berlebihan</li>
             <li> Isolasi Sosial, Dalam era digital dan media sosial, remaja juga lebih cenderung senang mengisolasi diri dan enggan untuk bersosialisasi. Hal tersebut dapat berdampak pada kesehatan mental mereka.</li>
         </ul>
+        <div class= "tabel"></div>
+        <table border="1">
+            <tr>
+                <th>Jenis Masalah</th>
+                <th>Deskripsi</th>
+                <th>Pencegahan</th>
+            </tr>
+            <tr>
+                <td>Depresi</td>
+                <td>Perasaan sedih yang dalam, kehilangan minat pada aktivitas, perubahan tidur dan makan.</td>
+                <td>Mencari dukungan sosial, konsultasi profesional, latihan fisik.</td>
+            </tr>
+            <tr>
+                <td>Kecemasan</td>
+                <td>Cemas, gelisah, ketakutan berlebihan.</td>
+                <td>Latihan relaksasi, meditasi, terapi kognitif perilaku.</td>
+            </tr>
+            <tr>
+                <td>Gangguan Makan</td>
+                <td>Anoreksia, bulimia, gangguan makan kompulsif.</td>
+                <td>Konseling kesehatan mental, dukungan keluarga.</td>
+            </tr>
+            <tr>
+                <td>Gangguan Perilaku</td>
+                <td>Gangguan konduksi, ADHD.</td>
+                <td>Terapi perilaku, pendidikan kesehatan.</td>
+            </tr>
+        </table>
     </div>
       <div class="gambar">
         <img src="https://ouch-cdn2.icons8.com/1pDMYsU9mm1pFMAzifemUY3IYEdMjyqOR0EOxCASZqs/rs:fit:256:256/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvMTY2/LzlmMmFlOTUxLTUx/YmYtNDU4Ni05ODZk/LTA5Y2RlMDMwNDBi/MC5zdmc.png" style="width: 400px ; height: 400px" alt="woman depression">
@@ -47,7 +78,7 @@
     </section>
 
         <p class="description" style="font-family: 'Poppins',sans-serif;"> It's okay if you feel sad. Your feeling is valid. but I hope tomorrow you are feeling getting better and back to strong again.</p>
-        <div class='row'>
+        <div class='row'></div>
     
         <div>
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTq3CXb6SuDPv7oDPDflglg_n98rPcJSjA__A&usqp=CAU" alt="feeling mad">
@@ -59,8 +90,24 @@
     <p style="font-family: 'Poppins',sans-serif;">let's train your mind to always think positively to maintain your mental health. it's better not to know too much than to know a lot of things that will burden your mind</p>
     </div>
     </section>
+    <form id="myForm">
+        <p style="font-family: 'Poppins',sans-serif;">Ayo daftarkan dirimu dan berkenalan bersama anggota lain</p>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="city">Password:</label>
+        <input type="text" id="password" name="password" required><br><br>
+        
+        <label for="zipCode">Harapan setelah bergabung bersama kami:</label>
+        <input type="number" id="wish" name="wish" required><br><br>
     
-    
+        <button type="submit" id="submit-form">Submit</button>
+    </form>
+
+    </div>
             <div class="footer-content">
                 <p style="font-family: 'Poppins',sans-serif;">My Social Media</p>
                 <ul class="social-media" style="font-family: 'Poppins',sans-serif;">
@@ -69,5 +116,5 @@
                 </ul>
             </div>
         </footer>
-    
+    </body>
     </html>
